@@ -152,9 +152,9 @@ function renderFavorites() {
     removeBtn.textContent = 'Remove';
     removeBtn.className = 'remove-btn';
     removeBtn.addEventListener('click', () => {
-      favorites.splice(index, 1); // remove from array
+      favorites.splice(index, 1); 
       localStorage.setItem('favorites', JSON.stringify(favorites));
-      renderFavorites(); // re-render list
+      renderFavorites(); 
     });
 
     li.appendChild(removeBtn);
