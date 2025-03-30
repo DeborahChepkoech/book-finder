@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Book Finder</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <h1>📚 Book Finder</h1>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search for a book">
+    <button type="submit">Search</button>
+  </form>
+
+  <p id="loading" class="hidden">Loading...</p>
+  <p id="error"></p>
+
+  <div id="results"></div>
+
+  <div id="favorites">
+    <h2>❤️ Favorites</h2>
+    <ul id="favorites-list"></ul>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
